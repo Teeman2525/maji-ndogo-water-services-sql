@@ -1,2 +1,153 @@
-# maji-ndogo-water-services-sql
-SQL analysis of the Maji Ndogo water services dataset, covering data cleaning, employee activity, water accessibility, and queue waiting times.
+# Maji Ndogo Water Services | SQL Data Analysis
+
+## Project Overview
+
+This project explores the Maji Ndogo water services dataset to investigate water accessibility, water quality, employee survey activities, and queue waiting times.
+
+Using MySQL, I performed data exploration, data cleaning, aggregation, and analytical queries to better understand the challenges surrounding access to water in the fictional community of Maji Ndogo.
+
+The project is divided into two stages:
+
+- **Project 1:** Data exploration and water quality investigation.
+- **Project 2:** Employee performance, geographic distribution, water source accessibility, and queue analysis.
+
+## Project Objectives
+
+The objectives of this analysis were to:
+
+1. Explore the database structure and understand the available data.
+2. Identify inconsistencies in water quality records.
+3. Investigate employee survey activities.
+4. Analyze the distribution of water sources across communities.
+5. Examine the population served by different water source types.
+6. Investigate water collection waiting times.
+7. Demonstrate practical SQL skills through a real-world-style analytical case study.
+
+## Tools and Technologies
+
+- **MySQL:** Data querying, cleaning, and analysis.
+- **MySQL Workbench:** Database management and SQL execution.
+- **GitHub:** Project documentation and version control.
+
+## Dataset Description
+
+The Maji Ndogo educational dataset contains information relating to water sources, survey visits, employees, locations, and water quality.
+
+Key tables used include:
+
+| Table | Description |
+|---|---|
+| `employee` | Employee details and assigned locations |
+| `visits` | Survey visit records and waiting times |
+| `location` | Geographic information about surveyed locations |
+| `water_source` | Water source types and estimated populations served |
+| `water_quality` | Recorded water quality assessments |
+| `well_pollution` | Pollution test results for wells |
+
+**Dataset note:** Maji Ndogo is a fictional educational case study. The records should not be interpreted as official government statistics.
+
+## Project 1: Data Exploration and Water Quality Investigation
+
+The first stage focused on understanding the database and investigating water quality information.
+
+### Activities Performed
+
+- Explored the available database tables.
+- Retrieved sample records to understand table structures.
+- Identified distinct water source types.
+- Investigated survey visits with unusually long waiting times.
+- Examined water quality assessments.
+- Identified potentially inconsistent well pollution records.
+- Applied targeted corrections to pollution descriptions.
+
+### SQL Concepts Used
+
+`SELECT`, `DISTINCT`, `WHERE`, `AND`, `LIMIT`, `UPDATE`
+
+## Project 2: Water Access and Survey Analysis
+
+The second stage extended the investigation into employee activities, location coverage, water accessibility, and waiting-time patterns.
+
+### 1. Employee Data Cleaning and Analysis
+
+- Generated standardized employee email addresses.
+- Removed unnecessary spaces from phone numbers.
+- Counted employees by town.
+- Identified the three employees with the highest number of recorded survey visits.
+
+### 2. Geographic Analysis
+
+- Counted surveyed locations by town and province.
+- Compared rural and urban location records.
+- Calculated the percentage of surveyed locations classified as rural.
+
+### 3. Water Source Analysis
+
+- Counted water sources by type.
+- Calculated the average and total number of people served by each source type.
+- Calculated each source type's share of recorded people served.
+- Ranked water source types and individual sources using SQL window functions.
+
+### 4. Survey Duration Analysis
+
+- Identified the earliest and latest recorded survey visits.
+- Calculated the elapsed time between these records.
+
+### 5. Queue Waiting-Time Analysis
+
+- Analyzed average queue waiting times by water source type.
+- Compared waiting times across weekdays.
+- Investigated hourly waiting-time patterns.
+- Used conditional aggregation to display hourly waiting times by day of the week.
+
+## SQL Skills Demonstrated
+
+- Data exploration and filtering
+- Data cleaning using string functions
+- Updating database records
+- Table joins
+- Aggregate functions: `COUNT()`, `SUM()`, `AVG()`
+- Grouping and sorting
+- Conditional logic using `CASE WHEN`
+- Subqueries
+- Window functions using `RANK()`
+- Date and time functions
+- Percentage calculations
+- Conditional aggregation
+
+## Repository Structure
+
+```text
+maji-ndogo-water-services-sql/
+├── README.md
+└── sql/
+    ├── 01_water_quality_exploration.sql
+    └── 02_water_access_analysis.sql
+```
+
+## How to Explore the Project
+
+1. Set up a MySQL environment.
+2. Obtain and import the Maji Ndogo educational dataset from an authorized source.
+3. Open the SQL files in MySQL Workbench.
+4. Review the comments explaining each analysis.
+5. Execute the relevant queries and inspect the results.
+
+**Important:** Some queries use `UPDATE` and permanently modify records. Review these statements and use a working copy of the database before executing them.
+
+## Analytical Considerations
+
+- Survey results describe the recorded dataset and should not automatically be generalized to an entire population.
+- Population-served calculations reflect the values recorded against water sources and do not necessarily represent unique individuals.
+- Queue analyses that exclude zero-minute waits describe waiting experiences among records with positive waiting times.
+- Rankings based on people served do not automatically indicate which water sources are in the worst condition.
+
+## Future Improvements
+
+- Develop a Power BI dashboard to visualize water accessibility and waiting-time patterns.
+- Extend the analysis with additional business questions and geographic comparisons.
+- Add verified findings and visual evidence from executed SQL queries.
+
+## Acknowledgements
+
+This project is based on the fictional Maji Ndogo educational case study associated with ExploreAI Academy. The SQL analysis and portfolio documentation were prepared as part of my data analytics learning journey.
