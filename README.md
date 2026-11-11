@@ -166,6 +166,35 @@ The SQL analysis identified the following distribution of recorded people served
 
 *Note: Percentages represent shares of recorded people served across water source records, not necessarily unique individuals.*
 
+### Geographic Distribution of Surveyed Locations
+
+The analysis revealed that **59.87% of recorded locations were classified as rural**, while the remaining 40.13% were non-rural locations.
+
+**Key observation:** Rural locations represent the majority of locations in the survey dataset.
+
+**Business implication:** The substantial rural representation highlights the importance of examining water accessibility challenges in rural communities when planning infrastructure improvements.
+
+*Note: This percentage represents surveyed location records, not the percentage of the population living in rural areas.*
+
+### Queue Waiting-Time Analysis
+
+The analysis revealed significant differences in average waiting times across water source types.
+
+| Water Source Type | Average Waiting Time |
+|---|---:|
+| Shared tap | 136.93 minutes |
+| River | 17.00 minutes |
+
+**Key observations:**
+
+- Shared taps recorded an average waiting time of approximately 137 minutes (2 hours and 17 minutes).
+- River water sources recorded an average waiting time of approximately 17 minutes.
+- The average waiting time at shared taps was approximately eight times that of river sources.
+
+**Business implication:** The findings suggest that shared water collection points may require further investigation into demand, capacity, and infrastructure availability.
+
+*Note: These averages reflect the recorded visit data. They do not establish the causes of longer queues or measure the quality or safety of the water.*
+
 ## Future Improvements
 
 - Develop a Power BI dashboard to visualize water accessibility and waiting-time patterns.
