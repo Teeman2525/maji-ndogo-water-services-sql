@@ -141,6 +141,30 @@ maji-ndogo-water-services-sql/
 - Population-served calculations reflect the values recorded against water sources and do not necessarily represent unique individuals.
 - Queue analyses that exclude zero-minute waits describe waiting experiences among records with positive waiting times.
 - Rankings based on people served do not automatically indicate which water sources are in the worst condition.
+## Key Findings
+
+### Water Source Distribution
+
+The SQL analysis identified the following distribution of recorded people served across water source types:
+
+| Water Source Type | People Served | Percentage |
+|---|---:|---:|
+| Shared tap | 11,945,272 | 43.24% |
+| Well | 4,841,724 | 17.52% |
+| Tap in home | 4,678,880 | 16.94% |
+| Broken tap in home | 3,799,720 | 13.75% |
+| River | 2,362,544 | 8.55% |
+
+**Key observations:**
+
+- Shared taps account for the largest share of recorded people served (43.24%), suggesting substantial reliance on communal water infrastructure.
+- Wells account for 17.52% of recorded people served, representing the second-largest category.
+- Broken home taps account for 13.75%, highlighting a potential infrastructure maintenance concern that warrants further investigation.
+- Rivers account for 8.55%, suggesting that some communities depend on natural water sources.
+
+**Business implication:** These findings can help guide further investigation into communal water access, infrastructure maintenance, and water source reliability.
+
+*Note: Percentages represent shares of recorded people served across water source records, not necessarily unique individuals.*
 
 ## Future Improvements
 
